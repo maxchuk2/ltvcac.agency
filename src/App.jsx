@@ -2,8 +2,8 @@ import './scss/app.scss';
 import React from 'react';
 
 import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 import MobileMenu from './Components/MobileMenu/MobileMenu';
-import Hero from './Components/Hero/Hero';
 
 import Home from './pages/home';
 
@@ -25,6 +25,7 @@ function App() {
       </div>
 
       {/* <MobileMenu /> */}
+      <Footer />
     </div>
   );
 }

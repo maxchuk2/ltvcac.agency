@@ -11,8 +11,6 @@ function Ticker() {
     'AUTOMATION',
   ];
 
-  console.log(tickersArr);
-
   return (
     <div className={styles.ticker}>
       <ul className={styles.list}>

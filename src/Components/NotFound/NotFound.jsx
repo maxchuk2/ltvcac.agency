@@ -7,11 +7,10 @@ function NotFound() {
   return (
     <div className={styles.notFound}>
       <h1 className={styles.title}>404</h1>
-      <p className={styles.subtitle}>Такой страницы нет :(</p>
+      <p className={styles.subtitle}>Page not found :(</p>
       <Link to="/" className={`${styles.button} button`}>
-        Вернуться на главную
+        Back to home
       </Link>
-      <img className={styles.img} src={img} alt="" />
     </div>
   );
 }

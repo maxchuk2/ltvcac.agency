@@ -27,15 +27,19 @@
     /* or 150% */
     text-align: center;
     color: white;
-
-    &:first-of-type {
-      padding: 20px 0;
-      border-bottom: 1px solid #fff;
+    
+    @media (min-width: 768px) {
+      &:first-of-type {
+        padding: 20px 0;
+        border-bottom: 1px solid #fff;
+      }
+  
+      &:last-of-type {
+        padding-top: 35px;
+      }
     }
 
-    &:last-of-type {
-      padding-top: 35px;
-    }
+    
   }
 
   .footerNav {

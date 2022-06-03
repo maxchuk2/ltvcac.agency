@@ -1,4 +1,5 @@
 import styles from './WhereWeShine.module.scss';
+import { Link } from 'react-router-dom';
 
 function WhereWeShine() {
   return (
@@ -30,29 +31,29 @@ function WhereWeShine() {
                   We analyze your key KPIs and optimize ad campaigns to cover ALL of your target
                   audiences efficiently.
                 </p>
-                <a href="#" className={styles.link}>
+                <Link to="paid" className={styles.link}>
                   FIND OUT MORE &#62;
-                </a>
+                </Link>
               </div>
               <div className={styles.item}>
-                <h3 className="h3 mb-20">Paid advertising channels</h3>
+                <h3 className="h3 mb-20">Customer Research</h3>
                 <p className={`${styles.text} mb-20`}>
-                  We analyze your key KPIs and optimize ad campaigns to cover ALL of your target
-                  audiences efficiently.
+                  We estimate your product demand based on qualitative and quantitative data, then
+                  create your ideal client profile. Finally, we optimize your product for target
+                  audience needs.
                 </p>
-                <a href="#" className={styles.link}>
+                <Link to="customer" className={styles.link}>
                   FIND OUT MORE &#62;
-                </a>
+                </Link>
               </div>
               <div className={styles.item}>
-                <h3 className="h3 mb-20">Paid advertising channels</h3>
+                <h3 className="h3 mb-20">Business analytics</h3>
                 <p className={`${styles.text} mb-20`}>
-                  We analyze your key KPIs and optimize ad campaigns to cover ALL of your target
-                  audiences efficiently.
+                  We boost your sales and cut your losses with the optimized business operations.
                 </p>
-                <a href="#" className={styles.link}>
+                <Link to="analytics" className={styles.link}>
                   FIND OUT MORE &#62;
-                </a>
+                </Link>
               </div>
             </div>
           </div>

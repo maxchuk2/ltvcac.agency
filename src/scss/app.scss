@@ -68,25 +68,72 @@ body {
 .text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 28px;
+  line-height: 24px;
   color: $primary;
 
   &--black {
     color: #000;
   }
 
+  &--dark {
+    color: #514E4E;
+  }
+
+  &--white {
+    color: white;
+  }
+
   &--lighten {
     color: #888888;
   }
 
+  &--primary {
+    color: $primary;
+  }
+
   &--fw-500 {
     font-weight: 500;
+  }
+
+  &--large {
+    font-size: 18px;
   }
 }
 
 .w-100 {
   width: 100% !important;
 }
+
+
+.w-80 {
+  width: 80% !important;
+}
+
+.w-70 {
+  width: 70% !important;
+}
+.w-35 {
+  width: 35% !important;
+}
+.w-30 {
+  width: 30% !important;
+}
+
+.w-20 {
+  width: 20% !important;
+}
+
+.w-15 {
+  width: 15% !important;
+}
+.w-10 {
+  width: 10% !important;
+}
+.w-5 {
+  width: 5% !important;
+}
+
+
 
 .italic {
   font-style: italic;
@@ -163,7 +210,7 @@ body {
 }
 
 .mb-5 {
-  margin-bottom: 5px;
+  margin-bottom: 5px !important;
 }
 
 .mb-10 {
@@ -183,15 +230,19 @@ body {
 }
 
 .mb-30 {
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
 }
 
 .mb-40 {
-  margin-bottom: 40px;
+  margin-bottom: 40px !important;
 }
 
 .mb-50 {
   margin-bottom: 50px;
+}
+
+.ml-50 {
+  margin-left: 50px;
 }
 
 .mb-60 {
@@ -228,6 +279,10 @@ body {
 
 .pl-20 {
   padding-left: 20px;
+}
+
+.pl-30 {
+  padding-left: 30px;
 }
 
 .pt-40 {
@@ -334,6 +389,54 @@ body {
   color: #222222;
 }
 
+.history {
+  &__item {
+    display: flex;
+    align-items: center;
+
+    i {
+      display: block;
+      margin-right: 12px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.problems {
+  @media (min-width: 1200px) {
+  padding-right: 120px;
+  }
+
+  .diagram {
+    display: flex;
+    li {
+      height: 30px;
+      font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+      
+    }
+  }
+}
+
+.color {
+  &--primary {
+    background-color: $primary;
+  }
+
+  &--pink {
+    background-color: #F72585;
+  }
+
+  &--secondary {
+    background-color: $secondary;
+  }
+}
 
 .section {
   position: relative;

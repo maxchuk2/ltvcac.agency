@@ -1,46 +1,47 @@
 import styles from './Header.module.scss';
 import logoSvg from './img/logo.svg';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <header className={styles.header}>
       <div className="container">
         <div className={styles.inner}>
-          <a href="/" className={styles.logo}>
+          <Link to="/" className={styles.logo}>
             <img src={logoSvg} width={125} height={125} alt="logo" />
-          </a>
+          </Link>
 
           <nav className={styles.mainNav}>
             <ul>
               <li>
-                <a href="#">About Us</a>
+                <Link to="/">About Us</Link>
               </li>
               <li>
-                <a href="portfolio.html">Portfolio</a>
+                <Link to="portfolio">Portfolio</Link>
               </li>
               <li className={styles.submenu}>
-                <span href="#">Services</span>
+                <span>Services</span>
                 <ul>
                   <li>
-                    <a href="/">
+                    <Link to="customer">
                       CUSTOMER
                       <br />
                       DEVELOPMENT
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/">
+                    <Link to="analytics">
                       ANALYTICS
                       <br />
                       SYSTEM SETUP
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/">
+                    <Link to="paid">
                       LEAD
                       <br />
                       GENERATION
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -50,7 +51,7 @@ function Header() {
           <div className={styles.social}>
             <ul>
               <li>
-                <a href="/">
+                <Link to="">
                   <svg
                     width="30"
                     height="30"
@@ -93,10 +94,10 @@ function Header() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/">
+                <Link to="">
                   <svg
                     width="30"
                     height="30"
@@ -111,10 +112,10 @@ function Header() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/">
+                <Link to="">
                   <svg
                     width="30"
                     height="30"
@@ -143,7 +144,7 @@ function Header() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

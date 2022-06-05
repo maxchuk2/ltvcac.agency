@@ -16,7 +16,26 @@ export const projects = [
       '• 	Launched targeted ads campaign via Facebook Ads;',
       '• 	Developed efficient positioning for the product in 2 languages.',
     ],
-    imagesUrl: ['', '', '', ''],
+    imagesUrl: [
+      {
+        mob: '../img/togezzer/1mob.jpg',
+        mob2x: '../img/togezzer/1mob@2x.jpg',
+        desk: '../img/togezzer/1desk.jpg',
+        desk2x: '../img/togezzer/1desk@2x.jpg',
+      },
+      {
+        mob: '../img/togezzer/2mob.jpg',
+        mob2x: '../img/togezzer/2mob@2x.jpg',
+        desk: '../img/togezzer/2desk.jpg',
+        desk2x: '../img/togezzer/2desk@2x.jpg',
+      },
+      {
+        mob: '../img/togezzer/3mob.jpg',
+        mob2x: '../img/togezzer/3mob@2x.jpg',
+        desk: '../img/togezzer/3desk.jpg',
+        desk2x: '../img/togezzer/3desk@2x.jpg',
+      },
+    ],
   },
   {
     id: 'loft',
@@ -38,7 +57,38 @@ export const projects = [
       '• 	Conducted in-depth customer development;',
       '• 	Developed new efficient market positioning (Russia & Ukraine for female audience and the US, UK & Canada for males respectively).',
     ],
-    imagesUrl: ['', '', '', ''],
+    imagesUrl: [
+      {
+        mob: '../img/loft/1mob.jpg',
+        mob2x: '../img/loft/1mob@2x.jpg',
+        desk: '../img/loft/1desk.jpg',
+        desk2x: '../img/loft/1desk@2x.jpg',
+      },
+      {
+        mob: '../img/loft/2mob.jpg',
+        mob2x: '../img/loft/2mob@2x.jpg',
+        desk: '../img/loft/2desk.jpg',
+        desk2x: '../img/loft/2desk@2x.jpg',
+      },
+      {
+        mob: '../img/loft/3mob.jpg',
+        mob2x: '../img/loft/3mob@2x.jpg',
+        desk: '../img/loft/3desk.jpg',
+        desk2x: '../img/loft/3desk@2x.jpg',
+      },
+      {
+        mob: '../img/loft/4mob.jpg',
+        mob2x: '../img/loft/4mob@2x.jpg',
+        desk: '../img/loft/4desk.jpg',
+        desk2x: '../img/loft/4desk@2x.jpg',
+      },
+      {
+        mob: '../img/loft/5mob.jpg',
+        mob2x: '../img/loft/5mob@2x.jpg',
+        desk: '../img/loft/5desk.jpg',
+        desk2x: '../img/loft/5desk@2x.jpg',
+      },
+    ],
   },
   {
     id: 'interweave',
@@ -68,7 +118,44 @@ export const projects = [
       '•	Designed brand identity.',
       '•	Designed and developed product website from start to finish (for INTERWEAVE®). framework from Moscow-based enterprise marketing consultancy Hacker-n-Hustler.',
     ],
-    imagesUrl: ['', '', '', ''],
+    imagesUrl: [
+      {
+        mob: '../img/Identity/1mob.jpg',
+        mob2x: '../img/Identity/1mob@2x.jpg',
+        desk: '../img/Identity/1desk.jpg',
+        desk2x: '../img/Identity/1desk@2x.jpg',
+      },
+      {
+        mob: '../img/Identity/2mob.jpg',
+        mob2x: '../img/Identity/2mob@2x.jpg',
+        desk: '../img/Identity/2desk.jpg',
+        desk2x: '../img/Identity/2desk@2x.jpg',
+      },
+      {
+        mob: '../img/Identity/3mob.jpg',
+        mob2x: '../img/Identity/3mob@2x.jpg',
+        desk: '../img/Identity/3desk.jpg',
+        desk2x: '../img/Identity/3desk@2x.jpg',
+      },
+      {
+        mob: '../img/Identity/4mob.jpg',
+        mob2x: '../img/Identity/4mob@2x.jpg',
+        desk: '../img/Identity/4desk.jpg',
+        desk2x: '../img/Identity/4desk@2x.jpg',
+      },
+      {
+        mob: '../img/Identity/5mob.jpg',
+        mob2x: '../img/Identity/5mob@2x.jpg',
+        desk: '../img/Identity/5desk.jpg',
+        desk2x: '../img/Identity/5desk@2x.jpg',
+      },
+      {
+        mob: '../img/Identity/6mob.jpg',
+        mob2x: '../img/Identity/6mob@2x.jpg',
+        desk: '../img/Identity/6desk.jpg',
+        desk2x: '../img/Identity/6desk@2x.jpg',
+      },
+    ],
   },
   {
     id: 'keyou',
@@ -89,6 +176,31 @@ export const projects = [
       '• 	Revamped SEO to 15000 unique organic visits per month;',
       '• 	Launched targeted ads campaign for the iOS app (via Facebook Ads) - 8000 sign-ups per month.',
     ],
-    imagesUrl: ['', '', '', ''],
+    imagesUrl: [
+      {
+        mob: '../img/keYou/1mob.jpg',
+        mob2x: '../img/keYou/1mob@2x.jpg',
+        desk: '../img/keYou/1desk.jpg',
+        desk2x: '../img/keYou/1desk@2x.jpg',
+      },
+      {
+        mob: '../img/keYou/2mob.jpg',
+        mob2x: '../img/keYou/2mob@2x.jpg',
+        desk: '../img/keYou/2desk.jpg',
+        desk2x: '../img/keYou/2desk@2x.jpg',
+      },
+      {
+        mob: '../img/keYou/3mob.jpg',
+        mob2x: '../img/keYou/3mob@2x.jpg',
+        desk: '../img/keYou/3desk.jpg',
+        desk2x: '../img/keYou/3desk@2x.jpg',
+      },
+      {
+        mob: '../img/keYou/4mob.jpg',
+        mob2x: '../img/keYou/4mob@2x.jpg',
+        desk: '../img/keYou/4desk.jpg',
+        desk2x: '../img/keYou/4desk@2x.jpg',
+      },
+    ],
   },
 ];

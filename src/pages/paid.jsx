@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from '../Components/Hero/Hero';
 import Ticker from '../Components/Ticker/Ticker';
 import MustHaveEvents from '../Components/MustHaveEvents/MustHaveEvents';
-import LetsTalk from '../Components/LetsTalk/LetsTalk';
+import LetsTalk from '../Components/LetsTalk/LetsTalkReverse';
 import Steps from '../Components/Steps/Steps';
 import OurToolkit from '../Components/OurToolkit/OurToolkit';
 

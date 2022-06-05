@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from '../Components/Hero/Hero';
 import Ticker from '../Components/Ticker/Ticker';
 import ListWithIcon from '../Components/ListWithIcon/ListWithIcon';
-import LetsTalk from '../Components/LetsTalk/LetsTalk';
+import LetsTalk from '../Components/LetsTalk/LetsTalkReverse';
 
 function customer({ hero }) {
   const arr1 = [
@@ -46,14 +46,16 @@ function customer({ hero }) {
             <div className="col-12 col-md-6 col-xl-4  offset-xl-1 pt-md-50 pb-md-20 pt-xl-100 pb-xl-100">
               <h3 className="h3 ph-20 mb-40">Why does your company need customer research?</h3>
               <div className="ph-20">
-                <div className="focus__content w-100 mb-40 mb-md-0">
-                  <p className="text-large mb-20 pl-md-60">
+                <div className="count-block w-100 mb-40 mb-md-0">
+                  <span className="count">1</span>
+                  <p className="text-large mb-40">
                     To identify customer pains and eliminate barriers for boosting your revenue and
                     achieving your business goals
                   </p>
                 </div>
-                <div className="focus__content w-100 mb-40 mb-md-0">
-                  <p className="text-large mb-20 pl-md-60">
+                <div className="count-block w-100 mb-40 mb-md-0">
+                  <span className="count">2</span>
+                  <p className="text-large mb-20">
                     To create a unique data-driven value proposition to attract your target audience
                   </p>
                 </div>

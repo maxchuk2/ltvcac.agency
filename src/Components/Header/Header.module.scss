@@ -7,10 +7,7 @@
   z-index: 10;
   top: 0;
   left: 0;
-
-  @media (min-width: 768px) {
-    position: relative;
-  }
+  transition: all .2s ease-in-out;
 
   .container {
     height: 100%;
@@ -19,40 +16,53 @@
   .inner {
     position: relative;
     height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    transition: all .2s ease-in-out;
+
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: flex-start;
+    }
   }
 
   .logo {
-    margin: 0 auto;
     z-index: 12;
     position: relative;
     line-height: 0;
-    transform: translateY(30px);
     transition: all .3s ease-in;
 
-    @media (min-width: 768px) {
-      margin-left: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+    img {
+      margin: 0 auto;
+      display: block;
+      transition: transform .2s ease-in-out;
+
+
+      @media (min-width: 768px) {
+        margin-left: 0;
+        margin-right: auto;
+      }
+    } 
   }
 
   .mainNav {
     display: none;
+    height: 100%;
 
     @media (min-width: 768px) {
       display: block;
       margin-left: auto;
     }
 
+    .linkActive {
+      color: $secondary;
+      font-weight: 500;
+    }
+
     ul {
       display: flex;
       align-items: center;
+      height: 100%;
 
-      li {
+      li {  
 
         a, span {
           border-right: 1px solid white;
@@ -71,8 +81,12 @@
           }
         }
 
-        span {
-          border-right: none;
+        &:last-child {
+
+          a {
+            border-right: 0;
+          }
+          
         }
       }
 
@@ -80,7 +94,7 @@
         position: relative;
         z-index: 10;
 
-        span {
+        a {
           position: relative;
           z-index: 11;
         }
@@ -103,6 +117,7 @@
           visibility: hidden;
           opacity: 0;
           transition: all .2s ease-in-out;
+          
 
           li {
             margin-bottom: 20px;
@@ -125,6 +140,7 @@
   .social {
     margin-left: 50px;
     display: none;
+    height: 100%;
 
     @media (min-width: 768px) {
       display: block;
@@ -133,13 +149,15 @@
       display: flex;
       align-items: center;
       gap: 20px;
+      height: 100%;
     }
   }
 
   .menuBtn {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     position: absolute;
+    z-index: 15;
     top: 0;
     right: 0;
     background-color: transparent;
@@ -149,7 +167,7 @@
     flex-direction: column;
     justify-content: center;
     transform: translateY(80px);
-    transition: all .2s ease-in;
+    transition: all .2s ease-in-out;
 
     @media (min-width: 768px) {
       display: none;
@@ -177,3 +195,23 @@
   }
 }
 
+.scroll {
+
+  .inner {
+    height: 50px;
+  }
+
+  .logo {
+    img {
+      transform: scale(.6) translateY(-40px);
+
+      @media (min-width: 768px) {
+        transform: scale(.6) translateY(-40px) translateX(-40px);
+      }
+    }
+  }
+
+  .menuBtn {
+    transform: translateY(0) !important;
+  }
+}

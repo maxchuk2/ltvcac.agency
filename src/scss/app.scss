@@ -65,6 +65,14 @@ body {
   
 }
 
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+.color-primary {
+  color: $secondary !important;
+}
+
 .text {
   font-weight: 400;
   font-size: 14px;
@@ -368,10 +376,8 @@ body {
 
 
 .App {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  overflow-x: hidden;
+ 
+
 
   @media (min-width: 768px) {
       padding: 0;
@@ -387,6 +393,25 @@ body {
   font-size: 48px;
   line-height: 65px;
   color: #222222;
+}
+
+.count-block {
+  display: flex;
+
+  span {
+    display: block;
+    min-width: 50px;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 80px;
+    /* identical to box height, or 170% */
+
+    letter-spacing: -0.055em;
+
+    color: rgba(35, 166, 240, 0.5);
+
+  }
 }
 
 .history {
@@ -422,6 +447,10 @@ color: #FFFFFF;
       
     }
   }
+}
+
+.portfolio-grid {
+  background-color: #616ab5;
 }
 
 .color {
@@ -495,6 +524,10 @@ color: #FFFFFF;
 @media (min-width:768px) {
   .ta-md-center {
     text-align: center;
+  }
+
+  .mb-md-0 {
+    margin-bottom: 0 !important;
   }
 
   .pl-md-60 {
@@ -707,6 +740,14 @@ color: #FFFFFF;
 
   .pt-xl-50 {
     padding-top: 50px;
+  }
+
+  .pb-xl-60 {
+    padding-bottom: 60px;
+  }
+
+  .pt-xl-60 {
+    padding-top: 60px;
   }
 
   .pt-xl-100 {

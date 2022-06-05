@@ -2,18 +2,26 @@
 
 .ticker {
   background-color: #4361EE;
-  padding: 8px 20px;
+  padding: 8px 0;
   overflow-x: hidden;
   display: flex;
   align-items: center;
 
 
   .list {
+
     display: flex;
     align-items: center;
-    animation: ticker 10s infinite linear;
+
+    div {
+      display: flex;
+    align-items: center;
+    }
+   
     li {
       margin-right: 50px;
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -33,9 +41,4 @@
   }
 }
 
-@keyframes ticker {
-  100% {
-    transform: translateX(-100%);
-  }
-}
 

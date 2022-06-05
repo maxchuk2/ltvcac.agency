@@ -11,7 +11,7 @@ function Project() {
   return (
     <>
       <Hero hero={project} />
-      <ProjectFull  />
+      <ProjectFull project={project} />
     </>
   );
 }

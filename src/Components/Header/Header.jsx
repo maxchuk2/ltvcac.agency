@@ -1,10 +1,20 @@
 import styles from './Header.module.scss';
 import logoSvg from './img/logo.svg';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
-function Header() {
+function Header({ onClickMenu }) {
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => setOffset(window.pageYOffset);
+
+    window.removeEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${offset > 30 ? styles.scroll : ''}`}>
       <div className="container">
         <div className={styles.inner}>
           <Link to="/" className={styles.logo}>
@@ -14,34 +24,52 @@ function Header() {
           <nav className={styles.mainNav}>
             <ul>
               <li>
-                <Link to="/">About Us</Link>
+                <NavLink
+                  className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
+                  to="/">
+                  About Us
+                </NavLink>
               </li>
               <li>
-                <Link to="portfolio">Portfolio</Link>
+                <NavLink
+                  className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
+                  to="portfolio">
+                  Portfolio
+                </NavLink>
               </li>
               <li className={styles.submenu}>
-                <span>Services</span>
+                <NavLink
+                  className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
+                  to="services">
+                  Services
+                </NavLink>
                 <ul>
                   <li>
-                    <Link to="customer">
+                    <NavLink
+                      className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
+                      to="/services/customer">
                       CUSTOMER
                       <br />
                       DEVELOPMENT
-                    </Link>
+                    </NavLink>
                   </li>
                   <li>
-                    <Link to="analytics">
+                    <NavLink
+                      className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
+                      to="/services/analytics">
                       ANALYTICS
                       <br />
                       SYSTEM SETUP
-                    </Link>
+                    </NavLink>
                   </li>
                   <li>
-                    <Link to="paid">
+                    <NavLink
+                      className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
+                      to="/services/paid">
                       LEAD
                       <br />
                       GENERATION
-                    </Link>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
@@ -149,7 +177,7 @@ function Header() {
             </ul>
           </div>
 
-          <button className={styles.menuBtn}>
+          <button onClick={() => onClickMenu(true)} className={styles.menuBtn}>
             <span></span>
             <span></span>
           </button>

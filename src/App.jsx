@@ -7,6 +7,7 @@ import MobileMenu from './Components/MobileMenu/MobileMenu';
 import { Routes, Route } from 'react-router-dom';
 
 import Home from './pages/home';
+import Services from './pages/services';
 import Analytics from './pages/analytics';
 import Page404 from './pages/page404';
 import Paid from './pages/paid';
@@ -14,7 +15,7 @@ import Portfolio from './pages/portfolio';
 import Customer from './pages/customer';
 import Project from './pages/Project';
 
-import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
+// import { ScrollToTop } from './Components/ScrollToTop/ScrollToTop';
 
 function App() {
   const [openedMenu, setOpenedMenu] = React.useState(false);
@@ -40,25 +41,31 @@ function App() {
       title: 'Projects',
       subtitle: 'Some of the projects we worked on. Feel free to request for more!',
     },
+    {
+      title: 'Services',
+      subtitle: 'Some of the projects we worked on. Feel free to request for more!',
+    },
   ];
 
   return (
     <div className="App">
-      <Header />
+      <Header onClickMenu={(bool) => setOpenedMenu(bool)} />
       <div className="main">
-        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home hero={herosInfo[0]} />} />
-          <Route path="analytics" element={<Analytics hero={herosInfo[1]} />} />
-          <Route path="paid" element={<Paid hero={herosInfo[2]} />} />
-          <Route path="customer" element={<Customer hero={herosInfo[3]} />} />
+
+          <Route path="services" element={<Services hero={herosInfo[5]} />} />
+          <Route path="services/analytics" element={<Analytics hero={herosInfo[1]} />} />
+          <Route path="services/paid" element={<Paid hero={herosInfo[2]} />} />
+          <Route path="services/customer" element={<Customer hero={herosInfo[3]} />} />
+
           <Route path="portfolio" element={<Portfolio hero={herosInfo[4]} />} />
           <Route path="/portfolio/:id" element={<Project />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
       </div>
 
-      {/* <MobileMenu /> */}
+      {openedMenu && <MobileMenu onClickClose={(bool) => setOpenedMenu(bool)} />}
       <Footer />
     </div>
   );

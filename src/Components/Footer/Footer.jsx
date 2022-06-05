@@ -1,5 +1,6 @@
 import styles from './Footer.module.scss';
 import logoSvg from './img/logo.svg';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -12,13 +13,13 @@ function Footer() {
         <nav className={`${styles.footerNav} mb-60 mb-md-0`}>
           <ul>
             <li>
-              <a href="#">ABOUT US</a>
+              <Link to="/">About Us</Link>
             </li>
             <li>
-              <a href="#">PORTFOLIO</a>
+              <Link to="portfolio">Portfolio</Link>
             </li>
             <li>
-              <a href="#">SERVICES</a>
+              <Link to="services">Sevices</Link>
             </li>
           </ul>
         </nav>

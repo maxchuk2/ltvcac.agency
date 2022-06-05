@@ -66,15 +66,14 @@ function WhatWeWorked() {
               <ul className={styles.list}>
                 {items.map((obj, i) => (
                   <li key={i} className={`${styles.item} mb-10`}>
-                    {console.log(obj.links)}
                     <i className={styles.icon}>
                       <img src={obj.svgIcon} alt={obj.title} />
                     </i>
                     <div className={styles.info}>
                       <h4 className={styles.title}>{obj.title}</h4>
                       <ul className={styles.links}>
-                        {obj.links.map((item) => (
-                          <li>{item}</li>
+                        {obj.links.map((item, i) => (
+                          <li key={i}>{item}</li>
                         ))}
                       </ul>
                     </div>

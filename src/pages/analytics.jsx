@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from '../Components/Hero/Hero';
 import Ticker from '../Components/Ticker/Ticker';
-import LetsTalk from '../Components/LetsTalk/LetsTalk';
+import LetsTalk from '../Components/LetsTalk/LetsTalkReverse';
 import ListWithIcon from '../Components/ListWithIcon/ListWithIcon';
 import MustHaveEvents from '../Components/MustHaveEvents/MustHaveEvents';
 

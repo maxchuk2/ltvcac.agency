@@ -61,8 +61,8 @@ function OurToolkit() {
           <div className="col-8 col-md-6 col-xl-6 pt-md-50 pb-md-50 pt-xl-130 pb-xl-160">
             <div className={`${styles.ourToolkit} ph-20 row`}>
               <div className="col-12 col-xl-6">
-                {itemsFirsts.map((obj) => (
-                  <div className={`${styles.item}`}>
+                {itemsFirsts.map((obj, i) => (
+                  <div key={i} className={`${styles.item}`}>
                     <i className={styles.icon}>
                       <svg
                         width="32"
@@ -95,8 +95,8 @@ function OurToolkit() {
               </div>
 
               <div className="col-12 col-xl-6 pr-xl-30">
-                {itemsSeconds.map((obj) => (
-                  <div className={`${styles.item}`}>
+                {itemsSeconds.map((obj, i) => (
+                  <div key={i} className={`${styles.item}`}>
                     <i className={styles.icon}>
                       <svg
                         width="32"

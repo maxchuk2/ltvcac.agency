@@ -16,11 +16,11 @@ function WhereWeShine() {
                 SHINE
               </h2>
             </div>
-            <a href="https://tally.so/r/wkdaBd/">
+            <Link to="https://tally.so/r/wkdaBd/">
               <button className="button button--transparent ml-auto d-none d-md-block">
                 CONTACT US
               </button>
-            </a>
+            </Link>
           </div>
 
           <div className="col-12 col-md-6 col-xl-4 offset-xl-2 m-auto pt-md-50 pb-md-50">

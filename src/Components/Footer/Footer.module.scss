@@ -71,6 +71,11 @@
           line-height: 24px;
           color: #FFFFFF;
           text-decoration: none;
+          text-transform: uppercase;
+
+          &:hover {
+            color: $secondary;
+          }
         }
       }
     }

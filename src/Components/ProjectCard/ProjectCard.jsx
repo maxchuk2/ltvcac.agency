@@ -13,9 +13,7 @@ function ProjectCard({ id, title, subtitle, tags }) {
               <li key={i}>{item}</li>
             ))}
           </ul>
-          <Link to="{id}" className={`${styles.button} button button--transparent`}>
-            READ MORE
-          </Link>
+          <button className={`${styles.button} button button--transparent`}>READ MORE</button>
         </article>
       </Link>
     </div>

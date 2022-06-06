@@ -107,7 +107,7 @@ function MobileMenu({ onClickClose }) {
                     to="/services/paid">
                     LEAD
                     <br />
-                    GENERATION
+                    GENERATED
                   </NavLink>
                 </li>
               </ul>

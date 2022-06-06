@@ -11,7 +11,7 @@ function MustHaveEvents() {
             <div className="col-12 col-md-6 col-xl-5 offset-xl-2 order-md-1 mb-60 mb-md-0 pb-xl-50 ">
               <div className="section__title-box section__title-box--img1 pl-70 pl-md-20 p-20 pt-120 pb-120">
                 <h2 className="section__title section__title--small ta-left">
-                  HOW TO LOOK <br /> WEBSITE <br /> ADS FUNNEL?
+                  HOW TO LOOK <br /> WEBSITE <br /> TRACKING <br /> FUNNEL?
                 </h2>
               </div>
             </div>
@@ -27,13 +27,13 @@ function MustHaveEvents() {
         </div>
       </section>
 
-      <section className="section section--title-left-img1 mb-60 mb-md-0">
+      <section className="section section--title-left-img2 mb-60 mb-md-0">
         <div className="container p-0">
           <div className="row">
             <div className="col-12 col-md-6 col-xl-5  mb-60 mb-md-0 pb-xl-50 ">
-              <div className="section__title-box section__title-box--img1 pl-70 pl-md-20 p-20 pt-120 pb-120">
+              <div className="section__title-box section__title-box--img2 pl-70 pl-md-20 p-20 pt-120 pb-120">
                 <h2 className="section__title section__title--small ta-md-right">
-                  HOW TO LOOK <br /> MOBILE APP <br /> ADS FUNNEL?
+                  HOW TO LOOK <br /> MOBILE APP <br /> TRACKING <br /> FUNNEL?
                 </h2>
               </div>
             </div>

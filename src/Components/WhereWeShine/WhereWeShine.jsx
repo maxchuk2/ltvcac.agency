@@ -17,7 +17,7 @@ function WhereWeShine() {
               </h2>
             </div>
             <Link to="https://tally.so/r/wkdaBd/">
-              <button className="button button--transparent ml-auto d-none d-md-block">
+              <button className="button button--transparent ml-auto d-none d-md-block CTA">
                 CONTACT US
               </button>
             </Link>

@@ -68,7 +68,7 @@ function Header({ onClickMenu }) {
                       to="/services/paid">
                       LEAD
                       <br />
-                      GENERATION
+                      GENERATED
                     </NavLink>
                   </li>
                 </ul>
@@ -79,7 +79,7 @@ function Header({ onClickMenu }) {
           <div className={styles.social}>
             <ul>
               <li>
-                <Link to="">
+                <Link to="https://www.linkedin.com/company/ltvcac-agency/">
                   <svg
                     width="30"
                     height="30"
@@ -125,7 +125,7 @@ function Header({ onClickMenu }) {
                 </Link>
               </li>
               <li>
-                <Link to="">
+                <Link to="https://business.facebook.com/ltvcac/">
                   <svg
                     width="30"
                     height="30"
@@ -143,7 +143,7 @@ function Header({ onClickMenu }) {
                 </Link>
               </li>
               <li>
-                <Link to="">
+                <Link to="https://www.instagram.com/ltvcac.agency/">
                   <svg
                     width="30"
                     height="30"

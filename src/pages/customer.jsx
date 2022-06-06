@@ -3,6 +3,7 @@ import Hero from '../Components/Hero/Hero';
 import Ticker from '../Components/Ticker/Ticker';
 import ListWithIcon from '../Components/ListWithIcon/ListWithIcon';
 import LetsTalk from '../Components/LetsTalk/LetsTalkReverse';
+import { Helmet } from 'react-helmet-async';
 
 function customer({ hero }) {
   const arr1 = [
@@ -30,6 +31,13 @@ function customer({ hero }) {
 
   return (
     <>
+      <Helmet>
+        <title>Qualitative and Quantitative research - LTV:CAC agency</title>,
+        <meta
+          name="description"
+          content="We know how to find out the most important problems of your clients through qualitative and quantitative research, which will help you make a best product"
+        />
+      </Helmet>
       <Hero hero={hero} />
       <Ticker />
       <section className="section focus section--title-left-img1 mb-40 mb-md-0">
@@ -38,8 +46,9 @@ function customer({ hero }) {
             <div className="col-12 col-md-6 mb-40  mb-xl-0">
               <div className="section__title-box section__title-box--img1  pb-120 pt-120 pt-md-120 p-25">
                 <h2 className="section__title section__title--small ta-left ta-md-right">
-                  RELIABLE DATA <br /> FOR OPTIMAL <br /> BUSINESS
-                  <br /> DECISIONS
+                  CUSTOMER <br />
+                  RESEARCH FOR <br /> OPTIMAL
+                  <br /> BUSINESS <br /> DECISIONS
                 </h2>
               </div>
             </div>
@@ -65,11 +74,25 @@ function customer({ hero }) {
         </div>
       </section>
 
-      <section className="section section--title-right-img1 mb-40 mb-md-0">
+      <div className="pb-40 pt-md-100 pb-md-100 pt-xl-190 pb-xl-190">
+        <div className="container ph-20">
+          <div className="row">
+            <div className="col-12 col-xl-8 m-auto">
+              <p className="section__text ta-left ta-md-center">
+                Misidentifying your customers' critical tasks to perform (JTBD) or problems results
+                in your team working for weeks/months on problems that your customers aren't willing
+                to pay for - which is xx.xxx$.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section className="section section--title-right-img2 mb-40 mb-md-0">
         <div className="container p-0">
           <div className="row">
             <div className="col-12 col-md-6 order-md-1 col-xl-5 offset-xl-1 mb-40 mb-md-0 pb-xl-50 ">
-              <div className="section__title-box section__title-box--img1 p-20 pt-120 pb-120">
+              <div className="section__title-box section__title-box--img2 p-20 pt-120 pb-120">
                 <h2 className="section__title section__title--small ta-left">
                   WHAT
                   <br />
@@ -127,11 +150,11 @@ function customer({ hero }) {
         </div>
       </section>
 
-      <section className="section section--title-left-img1 mb-60 mb-md-0">
+      <section className="section section--title-left-img3 mb-60 mb-md-0">
         <div className="container p-0">
           <div className="row">
             <div className="col-12 col-md-6 col-xl-6 mb-60 mb-md-0 pb-xl-50 ">
-              <div className="section__title-box section__title-box--img1 p-20 pt-120 pb-120">
+              <div className="section__title-box section__title-box--img3 p-20 pt-120 pb-120">
                 <h2 className="section__title section__title--small ta-left ta-md-right">
                   WHAT YOU ARE
                   <br />

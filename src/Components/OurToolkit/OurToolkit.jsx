@@ -52,7 +52,7 @@ function OurToolkit() {
               </h2>
             </div>
             <a href="https://tally.so/r/wkdaBd/">
-              <button className="button button--transparent mr-auto d-none d-md-block">
+              <button className="button button--transparent mr-auto d-none d-md-block CTA">
                 CONTACT US
               </button>
             </a>

@@ -6,27 +6,35 @@ import LetsTalk from '../Components/LetsTalk/LetsTalkReverse';
 import Steps from '../Components/Steps/Steps';
 import OurToolkit from '../Components/OurToolkit/OurToolkit';
 
+import { Helmet } from 'react-helmet-async';
+
 function paid({ hero }) {
   return (
     <>
+      <Helmet>
+        <title>Users Qcquisition from Digital channels - LTV:CAC agency</title>
+        <meta
+          name="description"
+          content="Use our 10 + years expertise in digital channels and market trends to drive more customers to your products and back your old clients for buy again. "
+        />
+      </Helmet>
+
       <Hero hero={hero} />
       <Ticker />
 
-      <section className="section section--title-left-img1">
+      <section className="section section--title-left-img3">
         <div className="container p-0">
           <div className="row">
             <div className="col-12 col-md-6 mb-40 mb-xl-0">
-              <div className="section__title-box section__title-box--img1 pt-100 pb-100 pt-md-120 p-25">
+              <div className="section__title-box section__title-box--img3 pt-100 pb-100 pt-md-120 p-25">
                 <h2 className="section__title section__title--small ta-left">
                   MARKETING
                   <br />
-                  INSTRUMENTS
+                  CHANNELS
                   <br />
-                  FOR THE
+                  FOR
                   <br />
-                  CHALLENGING
-                  <br />
-                  TIMES
+                  BUSINESSES
                 </h2>
               </div>
             </div>
@@ -35,7 +43,7 @@ function paid({ hero }) {
                 <h3 className="h3 mb-20">No signs of slowing down</h3>
                 <p className="text-large mb-20">
                   Despite the COVID‑19 pandemic in 2020, all digital ad channels demonstrate strong
-                  growth in the US market this year.
+                  growth in the world market this year.
                 </p>
                 <ul className="list mb-60">
                   <li className="text-large mb-5">Google Ads +29%,</li>
@@ -60,9 +68,9 @@ function paid({ hero }) {
           <div className="row">
             <div className="col-12 col-xl-8 m-auto">
               <p className="section__text ta-left ta-md-center">
-                Use our expertise in digital channels and market trends to drive more customers and
-                paying users to your products on a profit share basis. We'll help you grow your
-                revenue in no time!
+                Use our 10 + years expertise in digital channels and market trends to drive more
+                customers to your products and back your old clients for buy again. We'll help you
+                grow your revenue in no time!
               </p>
             </div>
           </div>
@@ -156,7 +164,7 @@ function paid({ hero }) {
             <div className="col-12 col-xl-8 m-auto">
               <p className="section__text ta-left ta-md-center">
                 In-depth analysis and a smart strategy are required to get high relevance for your
-                product, save installation costs and increase conversions.
+                product, save acquisition costs and increase conversions.
               </p>
             </div>
           </div>

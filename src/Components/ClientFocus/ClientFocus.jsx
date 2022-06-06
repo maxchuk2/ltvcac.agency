@@ -20,34 +20,33 @@ function ClientFocus() {
               <p className={`${styles.subtitle} mb-20`}>SaaS, Mobile Apps, E-commerce</p>
               <ul className={`${styles.list} mb-40 mb-md-0`}>
                 <li className={`${styles.listSubtitle} mb-20`}>GET THESE JOBS DONE:</li>
-                <li className={styles.listItem}>+ powerful sales funnel from scratch</li>
                 <li className={styles.listItem}>
                   + identification of marketing challenges and customer pains
                 </li>
+                <li className={styles.listItem}>+ powerful sales funnel automation from scratch</li>
                 <li className={styles.listItem}>
                   + work on hypotheses based on operational data (pre-MVP)
                 </li>
-                <li className={styles.listItem}>+ customer acquisition channels scoring</li>
-                <li className={styles.listItem}>+ unit economics analysis</li>
-                <li className={styles.listItem}>+ powerful sales funnel from scratch</li>
-                <li className={styles.listItem}>+ unit economics performance monitoring</li>
+                <li className={styles.listItem}>
+                  + customer acquisition channels growing from scratch
+                </li>
+                <li className={styles.listItem}>
+                  + unit-economy analysis and optimization practices
+                </li>
               </ul>
             </div>
             <div className={`${styles.content} mb-40`}>
-              <h3 className={`${styles.title} h3 mb-10`}>Investors</h3>
-              <p className={`${styles.subtitle} mb-20`}>Investment funds, accelerators, angels</p>
+              <h3 className={`${styles.title} h3 mb-10`}>Real Estate projects</h3>
+              <p className={`${styles.subtitle} mb-20`}>Development, funds, agency</p>
               <ul className={`${styles.list} mb-40 mb-md-0`}>
                 <li className={`${styles.listSubtitle} mb-20`}>GET THESE JOBS DONE:</li>
-                <li className="text">+ security of funds from investors worldwide</li>
-                <li className="text">+ business operations optimization</li>
-                <li className="text-grey fs-italic">
-                  inquiry assessment / qualitative and quantitative market research / analysis of
-                  competitors / marketing strategy / product development adjustment
+                <li className="text">
+                  + identification of marketing challenges and customer pains
                 </li>
-                <li className="text">+ customer acquisition channels scoring</li>
-                <li className="text">+ unit economics analysis</li>
-                <li className="text">+ powerful sales funnel from scratch</li>
-                <li className="text">+ unit economics performance monitoring</li>
+                <li className="text">+ сreating a stunning digital package for your project</li>
+
+                <li className="text">+ powerful sales funnel automation from scratch</li>
+                <li className="text">+ customer acquisition channels growing</li>
               </ul>
             </div>
           </div>

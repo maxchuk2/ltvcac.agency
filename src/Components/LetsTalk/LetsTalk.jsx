@@ -15,7 +15,7 @@ function LetsTalk() {
             </div>
           </div>
 
-          <div className="col-9 col-md-6 col-xl-4 offset-2 offset-md-0 offset-xl-1 pt-xl-100">
+          <div className="col-9 col-md-6 col-xl-4 offset-2 pt-md-60 pb-md-60 offset-md-0 offset-xl-1 pt-xl-100">
             <div className={`${styles.letsTalk} m-auto`}>
               <h3 className={styles.title}>Speak With Expert Team</h3>
               <span className={styles.label}>FREE!</span>
@@ -30,7 +30,7 @@ function LetsTalk() {
 
               <div>
                 <a href="https://tally.so/r/wkdaBd/">
-                  <button className={`${styles.button} button  button--black`}>
+                  <button className={`${styles.button} button  button--black CTA`}>
                     DISCUSS YOUR PROJECT
                   </button>
                 </a>

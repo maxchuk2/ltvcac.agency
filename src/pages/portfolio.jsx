@@ -4,10 +4,18 @@ import Ticker from '../Components/Ticker/Ticker';
 import HeroAdvantages from '../Components/HeroAdvantages/HeroAdvantages';
 import ProjectCard from '../Components/ProjectCard/ProjectCard';
 import { projects } from '../data/projects';
+import { Helmet } from 'react-helmet-async';
 
 function portfolio({ hero }) {
   return (
     <>
+      <Helmet>
+        <title>Our cases- LTV:CAC agency</title>,
+        <meta
+          name="description"
+          content="We help startups and property businesses grow digital marketing from idea to xx.xxx customers with help digital channels, data analysis and customer research"
+        />
+      </Helmet>
       <Hero hero={hero} />
       <Ticker />
       <HeroAdvantages />

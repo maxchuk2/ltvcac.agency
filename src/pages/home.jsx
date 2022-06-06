@@ -8,10 +8,19 @@ import WhereWeShine from '../Components/WhereWeShine/WhereWeShine';
 import OurToolkit from '../Components/OurToolkit/OurToolkit';
 import HowItWorks from '../Components/HowItWorks/HowItWorks';
 import LetsTalk from '../Components/LetsTalk/LetsTalk';
+import { Helmet } from 'react-helmet-async';
 
 function Home({ hero }) {
   return (
     <>
+      <Helmet>
+        <title>High ROI Performance marketing services - LTV:CAC agency</title>,
+        <meta
+          name="description"
+          content="We help startups and property businesses grow digital marketing from idea to xx.xxx customers with help digital channels, data analysis and customer research"
+        />
+      </Helmet>
+
       <Hero hero={hero} />
       <Ticker />
       <HeroAdvantages />
@@ -25,8 +34,8 @@ function Home({ hero }) {
                 ROI&#62;0 if LTV&#62;CAC
               </h2>
               <p className="section__text ta-left ta-md-center">
-                During the past decade we&nbsp;have worked on &gt; 90&nbsp;projects
-                in&nbsp;industries like SaaS, Ecommerce, Online Gaming etc.
+                We help startups and property businesses grow digital marketing from idea to xx.xxx
+                customers with help digital channels, data analysis and customer research
               </p>
             </div>
           </div>

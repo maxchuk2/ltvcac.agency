@@ -4,6 +4,7 @@ import Ticker from '../Components/Ticker/Ticker';
 import LetsTalk from '../Components/LetsTalk/LetsTalkReverse';
 import ListWithIcon from '../Components/ListWithIcon/ListWithIcon';
 import MustHaveEvents from '../Components/MustHaveEvents/MustHaveEvents';
+import { Helmet } from 'react-helmet-async';
 
 function analytics({ hero }) {
   const arr1 = [
@@ -93,16 +94,24 @@ function analytics({ hero }) {
 
   return (
     <>
+      <Helmet>
+        <title>Site and app Tracking system setup services - LTV:CAC agency</title>
+        <meta
+          name="description"
+          content="We can build system compile marketing data and sales get exact selling costs to sales ratio, while monitoring ad channels and events inside sales funnel"
+        />
+      </Helmet>
+
       <Hero hero={hero} />
       <Ticker />
 
-      <section className="section section--title-left-img1">
+      <section className="section section--title-left-img3">
         <div className="container p-0">
           <div className="row">
             <div className="col-12 col-md-6 mb-40 mb-xl-0">
               <div className="section__title-box pt-80 pt-md-120 p-25">
-                <h2 className="section__title section__title--small section__title-img1 ta-left">
-                  INSTRUMENTS
+                <h2 className="section__title section__title--small section__title-img3 ta-left">
+                  TRACKING
                   <br />
                   CLUSTER FOR
                   <br />
@@ -112,7 +121,7 @@ function analytics({ hero }) {
             </div>
             <div className="col-12 col-md-6 col-xl-4 offset-xl-1 d-md-flex d-xl-block pt-md-50 pb-md-20 pt-xl-100 pb-xl-100">
               <div className="ph-20">
-                <h3 className="h3 mb-20">Why does your company need analytics?</h3>
+                <h3 className="h3 mb-20">Why does your company need tracking?</h3>
                 <p className="text mb-20">
                   Imagine, you just got a seat on a jet plane It’s time for takeoff and the pilot is
                   speaking:
@@ -162,9 +171,8 @@ function analytics({ hero }) {
                   app and/or website.
                 </p>
                 <p className="text mb-20">
-                  We compile sales and marketing data and get exact selling costs to sales ratio,
-                  while monitoring ad channels (traffic partners) efficiency and identifying the
-                  most selling ad.
+                  We can build system compile marketing data and sales get exact selling costs to
+                  sales ratio, while monitoring ad channels and events inside sales funnel!
                 </p>
               </div>
             </div>
@@ -185,19 +193,17 @@ function analytics({ hero }) {
         </div>
       </div>
 
-      <section className="section section--title-left-img1 mb-40 mb-md-0">
+      <section className="section section--title-left-img4 mb-40 mb-md-0">
         <div className="container p-0">
           <div className="row">
             <div className="col-12 col-md-6 col-xl-5 mb-40 mb-md-0 pb-xl-50 ">
-              <div className="section__title-box section__title-box--img1 pl-70 p-20 pt-120 pb-120">
+              <div className="section__title-box section__title-box--img4 pl-70 p-20 pt-120 pb-120">
                 <h2 className="section__title section__title--small ta-left ta-md-right">
                   WHAT CAN
                   <br />
-                  ANALYTICS
+                  TRACKING HELP
                   <br />
-                  HELP YOU
-                  <br />
-                  WITH?
+                  YOU WITH?
                 </h2>
               </div>
             </div>
@@ -234,7 +240,7 @@ function analytics({ hero }) {
                   <br />
                   WITH NO
                   <br />
-                  ANALYTICS?
+                  TRACKING?
                 </h2>
               </div>
             </div>
@@ -248,11 +254,11 @@ function analytics({ hero }) {
         </div>
       </section>
 
-      <section className="section section--title-left-img1 mb-60 mb-md-0">
+      <section className="section section--title-left-img3 mb-60 mb-md-0">
         <div className="container p-0">
           <div className="row">
             <div className="col-12 col-md-6 col-xl-5 mb-60 mb-md-0 pb-xl-50 ">
-              <div className="section__title-box section__title-box--img1 pl-70 p-20 pt-120 pb-120">
+              <div className="section__title-box section__title-box--img3 pl-70 p-20 pt-120 pb-120">
                 <h2 className="section__title section__title--small ta-left ta-md-right">
                   YOUR
                   <br />
@@ -260,7 +266,7 @@ function analytics({ hero }) {
                   <br />
                   WITH
                   <br />
-                  ANALYTICS
+                  TRACKING
                 </h2>
               </div>
             </div>
@@ -286,7 +292,7 @@ function analytics({ hero }) {
                   <br />
                   MAKE YOUR
                   <br />
-                  ANALYTICS
+                  TRACKING
                   <br />
                   EFFECTIVE?
                 </h2>

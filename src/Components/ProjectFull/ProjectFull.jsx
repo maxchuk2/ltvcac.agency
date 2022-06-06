@@ -1,5 +1,6 @@
 import styles from './ProjectFull.module.scss';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 function ProjectFull({ project }) {
   return (
@@ -29,9 +30,19 @@ function ProjectFull({ project }) {
           </div>
           <div className="col-12 col-md-6 col-xl-7 offset-xl-1 lh-0 pt-xl-60 pb-xl-60">
             {project.imagesUrl.map((obj, i) => (
-              <picture key={i} className="lh-0">
-                <source srcSet={`${obj.desk}, ${obj.desk2x} 2x`} media="(min-width: 1200px)" />
-                <img src={obj.mob} className="img" alt="" srcSet={`${obj.mob2x} 2x`} />
+              <picture loading="lazy" key={i} className="lh-0">
+                <source
+                  loading="lazy"
+                  srcSet={`${obj.desk}, ${obj.desk2x} 2x`}
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  loading="lazy"
+                  src={obj.mob}
+                  className="img"
+                  alt=""
+                  srcSet={`${obj.mob2x} 2x`}
+                />
               </picture>
             ))}
           </div>

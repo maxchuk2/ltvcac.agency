@@ -5,6 +5,7 @@
 
 body {
   background-color: $background;
+  scroll-behavior: smooth;
 }
 
 .h2 {
@@ -376,8 +377,8 @@ body {
 
 
 .App {
- 
-
+  
+  scroll-behavior: smooth;
 
   @media (min-width: 768px) {
       padding: 0;
@@ -510,6 +511,14 @@ color: #FFFFFF;
     &--img2 {
       background-image: url('../assets/img/section/mob2.jpg');
     }
+
+    &--img3 {
+      background-image: url('../assets/img/section/mob3.jpg');
+    }
+
+    &--img4 {
+      background-image: url('../assets/img/section/mob4.jpg');
+    }
   }
 
   &__text {
@@ -544,6 +553,14 @@ color: #FFFFFF;
 
   .pt-md-50 {
     padding-top: 50px;
+  }
+
+  .pt-md-60 {
+    padding-top: 60px;
+  }
+
+  .pb-md-60 {
+    padding-bottom: 60px;
   }
 
   .pb-md-20 {
@@ -654,6 +671,23 @@ color: #FFFFFF;
       }
     }
 
+    &--title-left-img3 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        background-image: url('../assets/img/section/3.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+    }
+
     &--title-left-img2 {
       &:before {
         content: '';
@@ -662,6 +696,23 @@ color: #FFFFFF;
         height: 100%;
         background-color: $primary;
         background-image: url('../assets/img/section/2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &--title-left-img4 {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: $primary;
+        background-image: url('../assets/img/section/4.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -709,7 +760,9 @@ color: #FFFFFF;
       background-color: transparent;
     }
 
-
+    
+    &__title-box--img4,
+    &__title-box--img3,
     &__title-box--img2,
     &__title-box--img1 {
       background-image: none;

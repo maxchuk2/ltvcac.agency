@@ -1,8 +1,9 @@
 import styles from './Hero.module.scss';
+import React from 'react';
 
 function Hero({ hero }) {
   return (
-    <section className={styles.hero}>
+    <section className={`${styles.hero} ${styles[hero.heroImg]}`}>
       <div className="container">
         <div className="row">
           <div className="col-10 m-auto col-md-8 col-xl-8">
@@ -16,7 +17,7 @@ function Hero({ hero }) {
               </ul>
             )}
             <div className={styles.buttonWrap}>
-              <a href="https://tally.so/r/wkdaBd/" className={`${styles.button} button`}>
+              <a href="https://tally.so/r/wkdaBd/" className={`${styles.button} button CTA`}>
                 TELL US ABOUT YOUR PROJECT
               </a>
             </div>

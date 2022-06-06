@@ -75,6 +75,7 @@
           transition: color .2s ease-in-out;
           padding: 0 15px;
           cursor: pointer;
+          position: relative;
 
           &:hover {
             color: $secondary;
@@ -115,9 +116,9 @@
           top: 0;
           left: 0;
           visibility: hidden;
-          opacity: 0;
+          opacity: 0; 
           transition: all .2s ease-in-out;
-          
+          height: auto;
 
           li {
             margin-bottom: 20px;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 import Hero from '../Components/Hero/Hero';
 import Ticker from '../Components/Ticker/Ticker';
@@ -8,6 +9,13 @@ import LetsTalk from '../Components/LetsTalk/LetsTalk';
 function paid({ hero }) {
   return (
     <>
+      <Helmet>
+        <title>Professional Digital Marketing Services - LTV:CAC agency</title>,
+        <meta
+          name="description"
+          content="We know how to combine digital channels and data-driven practices to achieve maximum ROI for your product, click and read our case studies on our website."
+        />
+      </Helmet>
       <Hero hero={hero} />
       <Ticker />
       <section className="section section--title-left-img1">

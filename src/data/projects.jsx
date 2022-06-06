@@ -3,6 +3,7 @@ export const projects = [
     id: 'togezzer',
     title: 'Togezzer',
     subtitle: 'YOUR COMPANY’S VIRTUAL COO',
+    heroImg: 'imgFifth',
     tags: ['CUS DEV', 'PRODUCT', 'DESIGN', 'ANALYTICS', 'TRAFFIC', 'MARKET RESEARCH', 'AUTOMATION'],
     overview: [
       'Togezzer is your virtual COO: a tool to keep things in your company going. It is a digital workplace for everyone in your company. ',
@@ -41,6 +42,7 @@ export const projects = [
     id: 'loft',
     title: 'Loft/Denim',
     subtitle: 'International dating platform',
+    heroImg: 'imgFifth',
     tags: ['CUS DEV', 'PRODUCT', 'DESIGN', 'ANALYTICS', 'TRAFFIC', 'MARKET RESEARCH', 'AUTOMATION'],
     overview: [
       'LOFT (or Denim on select markets) is a matchmaking platform for international dating. Now the project is known as Demie.',
@@ -94,6 +96,7 @@ export const projects = [
     id: 'interweave',
     title: 'Interweave',
     subtitle: 'Consulting framework by H-N-H',
+    heroImg: 'imgFifth',
     tags: [
       'BRANDING',
       'CUS DEV',
@@ -161,6 +164,7 @@ export const projects = [
     id: 'keyou',
     title: 'KeYou',
     subtitle: 'Datertainment platform for LQBTQ+ youth',
+    heroImg: 'imgFifth',
     tags: ['CUS DEV', 'PRODUCT', 'DESIGN', 'ANALYTICS', 'TRAFFIC', 'ASO', 'MARKET RESEARCH'],
     overview: [
       'KeYou is a datertainment platform.',

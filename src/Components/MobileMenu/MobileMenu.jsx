@@ -9,7 +9,7 @@ function MobileMenu({ onClickClose }) {
 
   return (
     <div className={styles.mobileMenu}>
-      <a href="/" className={styles.logo}>
+      <a to="/" className={styles.logo}>
         <img src={logoSvg}></img>
       </a>
 
@@ -123,7 +123,7 @@ function MobileMenu({ onClickClose }) {
       <div className={styles.social}>
         <ul>
           <li>
-            <a href="/">
+            <Link to="https://www.linkedin.com/company/ltvcac-agency/">
               <svg
                 width="60"
                 height="60"
@@ -166,11 +166,11 @@ function MobileMenu({ onClickClose }) {
                   strokeLinejoin="round"
                 />
               </svg>
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="/">
+            <Link to="https://business.facebook.com/ltvcac/">
               <svg
                 width="60"
                 height="60"
@@ -185,11 +185,11 @@ function MobileMenu({ onClickClose }) {
                   strokeLinejoin="round"
                 />
               </svg>
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="/">
+            <Link to="https://www.instagram.com/ltvcac.agency/">
               <svg
                 width="60"
                 height="60"
@@ -218,7 +218,7 @@ function MobileMenu({ onClickClose }) {
                   strokeLinejoin="round"
                 />
               </svg>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

@@ -79,7 +79,7 @@ function Header({ onClickMenu }) {
           <div className={styles.social}>
             <ul>
               <li>
-                <Link to="https://www.linkedin.com/company/ltvcac-agency/">
+                <a href="https://www.linkedin.com/company/ltvcac-agency/">
                   <svg
                     width="30"
                     height="30"
@@ -122,10 +122,10 @@ function Header({ onClickMenu }) {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="https://business.facebook.com/ltvcac/">
+                <a href="https://business.facebook.com/ltvcac/">
                   <svg
                     width="30"
                     height="30"
@@ -140,10 +140,10 @@ function Header({ onClickMenu }) {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="https://www.instagram.com/ltvcac.agency/">
+                <a href="https://www.instagram.com/ltvcac.agency/">
                   <svg
                     width="30"
                     height="30"
@@ -172,7 +172,7 @@ function Header({ onClickMenu }) {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

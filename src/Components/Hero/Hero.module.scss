@@ -94,12 +94,17 @@
   .title {
     font-style: normal;
     font-weight: 500;
-    font-size: 80px;
-    line-height: 80px;
+    font-size: 60px;
+    line-height: 60px;
     text-align: center;
     letter-spacing: -0.055em;
     color: #FFFFFF;
     margin-bottom: 40px;
+
+    @media (min-width: 768px) {
+      font-size: 60px;
+    line-height: 60px;
+    }
 
     &--small {
       font-size: 55px;

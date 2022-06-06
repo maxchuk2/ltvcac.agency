@@ -9,9 +9,9 @@ function MobileMenu({ onClickClose }) {
 
   return (
     <div className={styles.mobileMenu}>
-      <a to="/" className={styles.logo}>
-        <img src={logoSvg}></img>
-      </a>
+      <NavLink to="/" className={styles.logo}>
+        <img src={logoSvg} />
+      </NavLink>
 
       {openSubmenu && (
         <button onClick={() => setOpenSubmenu(!openSubmenu)} className={styles.back}>
@@ -116,14 +116,14 @@ function MobileMenu({ onClickClose }) {
         </ul>
       </nav>
 
-      <Link to="https://tally.so/r/wkdaBd/" className="button button--secondary">
+      <Link to="https://tally.so/r/wkdaBd/" className="button button--secondary CTA">
         CONTACT US
       </Link>
 
       <div className={styles.social}>
         <ul>
           <li>
-            <Link to="https://www.linkedin.com/company/ltvcac-agency/">
+            <a href="https://www.linkedin.com/company/ltvcac-agency/">
               <svg
                 width="60"
                 height="60"
@@ -166,11 +166,11 @@ function MobileMenu({ onClickClose }) {
                   strokeLinejoin="round"
                 />
               </svg>
-            </Link>
+            </a>
           </li>
 
           <li>
-            <Link to="https://business.facebook.com/ltvcac/">
+            <a href="https://business.facebook.com/ltvcac/">
               <svg
                 width="60"
                 height="60"
@@ -185,11 +185,11 @@ function MobileMenu({ onClickClose }) {
                   strokeLinejoin="round"
                 />
               </svg>
-            </Link>
+            </a>
           </li>
 
           <li>
-            <Link to="https://www.instagram.com/ltvcac.agency/">
+            <a href="https://www.instagram.com/ltvcac.agency/">
               <svg
                 width="60"
                 height="60"
@@ -218,7 +218,7 @@ function MobileMenu({ onClickClose }) {
                   strokeLinejoin="round"
                 />
               </svg>
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

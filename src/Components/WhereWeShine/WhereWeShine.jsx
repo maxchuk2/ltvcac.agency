@@ -16,7 +16,7 @@ function WhereWeShine() {
                 SHINE
               </h2>
             </div>
-            <Link to="services/https://tally.so/r/wkdaBd/">
+            <Link to="https://tally.so/r/wkdaBd/">
               <button className="button button--transparent ml-auto d-none d-md-block CTA">
                 CONTACT US
               </button>
@@ -31,7 +31,7 @@ function WhereWeShine() {
                   We analyze your key KPIs and optimize ad campaigns to cover ALL of your target
                   audiences efficiently.
                 </p>
-                <Link to="services/paid" className={styles.link}>
+                <Link to="/ltvcac/services/paid" className={styles.link}>
                   FIND OUT MORE &#62;
                 </Link>
               </div>
@@ -42,7 +42,7 @@ function WhereWeShine() {
                   create your ideal client profile. Finally, we optimize your product for target
                   audience needs.
                 </p>
-                <Link to="services/customer" className={styles.link}>
+                <Link to="/ltvcac/services/customer" className={styles.link}>
                   FIND OUT MORE &#62;
                 </Link>
               </div>
@@ -51,7 +51,7 @@ function WhereWeShine() {
                 <p className={`${styles.text} mb-20`}>
                   We boost your sales and cut your losses with the optimized business operations.
                 </p>
-                <Link to="services/analytics" className={styles.link}>
+                <Link to="/ltvcac/services/analytics" className={styles.link}>
                   FIND OUT MORE &#62;
                 </Link>
               </div>

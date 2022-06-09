@@ -39,7 +39,7 @@ function WhatWeWorked() {
     {
       title: 'Platforms',
       links: ['Uber,', 'Chummy App,', 'Guvera,', 'City Life'],
-      svgIcon: icon4,
+      svgIcon: icon5,
     },
   ];
 

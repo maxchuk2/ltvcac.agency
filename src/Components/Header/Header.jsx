@@ -17,7 +17,7 @@ function Header({ onClickMenu }) {
     <header className={`${styles.header} ${offset > 30 ? styles.scroll : ''}`}>
       <div className="container">
         <div className={styles.inner}>
-          <Link to="/" className={styles.logo}>
+          <Link to="/ltvcac/" className={styles.logo}>
             <img src={logoSvg} width={125} height={125} alt="logo" />
           </Link>
 
@@ -26,28 +26,28 @@ function Header({ onClickMenu }) {
               <li>
                 <NavLink
                   className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-                  to="/">
+                  to="ltvcac/">
                   About Us
                 </NavLink>
               </li>
               <li>
                 <NavLink
                   className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-                  to="portfolio">
+                  to="ltvcac/portfolio">
                   Portfolio
                 </NavLink>
               </li>
               <li className={styles.submenu}>
                 <NavLink
                   className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-                  to="services">
+                  to="ltvcac/services">
                   Services
                 </NavLink>
                 <ul>
                   <li>
                     <NavLink
                       className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-                      to="/services/customer">
+                      to="ltvcac/services/customer">
                       CUSTOMER
                       <br />
                       DEVELOPMENT
@@ -56,7 +56,7 @@ function Header({ onClickMenu }) {
                   <li>
                     <NavLink
                       className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-                      to="/services/analytics">
+                      to="ltvcac/services/analytics">
                       ANALYTICS
                       <br />
                       SYSTEM SETUP
@@ -65,7 +65,7 @@ function Header({ onClickMenu }) {
                   <li>
                     <NavLink
                       className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-                      to="/services/paid">
+                      to="ltvcac/services/paid">
                       LEAD
                       <br />
                       GENERATED
@@ -79,7 +79,7 @@ function Header({ onClickMenu }) {
           <div className={styles.social}>
             <ul>
               <li>
-                <a href="https://www.linkedin.com/company/ltvcac-agency/">
+                <a target="_blank" href="https://www.linkedin.com/company/ltvcac-agency/">
                   <svg
                     width="30"
                     height="30"
@@ -125,7 +125,7 @@ function Header({ onClickMenu }) {
                 </a>
               </li>
               <li>
-                <a href="https://business.facebook.com/ltvcac/">
+                <a target="_blank" href="https://business.facebook.com/ltvcac/">
                   <svg
                     width="30"
                     height="30"
@@ -143,7 +143,7 @@ function Header({ onClickMenu }) {
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/ltvcac.agency/">
+                <a target="_blank" href="https://www.instagram.com/ltvcac.agency/">
                   <svg
                     width="30"
                     height="30"

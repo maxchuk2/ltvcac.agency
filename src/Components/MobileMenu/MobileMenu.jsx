@@ -9,8 +9,8 @@ function MobileMenu({ onClickClose }) {
 
   return (
     <div className={styles.mobileMenu}>
-      <NavLink to="/" className={styles.logo}>
-        <img src={logoSvg} />
+      <NavLink onClick={() => onClickClose(false)} to="/ltvcac" className={styles.logo}>
+        <img src={logoSvg} alt="logo" />
       </NavLink>
 
       {openSubmenu && (
@@ -64,7 +64,7 @@ function MobileMenu({ onClickClose }) {
             <NavLink
               onClick={() => onClickClose(false)}
               className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-              to="/">
+              to="/ltvcac">
               About Us
             </NavLink>
           </li>
@@ -72,19 +72,34 @@ function MobileMenu({ onClickClose }) {
             <NavLink
               onClick={() => onClickClose(false)}
               className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-              to="portfolio">
+              to="/ltvcac/portfolio">
               Portfolio
             </NavLink>
           </li>
           <li>
-            <span onClick={() => setOpenSubmenu(!openSubmenu)}>SERVICES</span>
+            <NavLink className={styles.submenuLink} to="/ltvcac/services">
+              <span onClick={() => onClickClose(false)}>SERVICES</span>
+              <button onClick={() => setOpenSubmenu(!openSubmenu)} className={styles.submenuBtn}>
+                <svg
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.26998 2.55611C7.97706 2.84912 7.8125 3.24648 7.8125 3.6608C7.8125 4.07512 7.97706 4.47247 8.26998 4.76549L16.0044 12.4999L8.26998 20.2342C7.98536 20.5289 7.82787 20.9236 7.83143 21.3333C7.83499 21.743 7.99931 22.1349 8.28901 22.4246C8.57871 22.7143 8.97061 22.8786 9.38029 22.8822C9.78997 22.8857 10.1847 22.7282 10.4794 22.4436L19.3184 13.6045C19.6113 13.3115 19.7759 12.9142 19.7759 12.4999C19.7759 12.0855 19.6113 11.6882 19.3184 11.3952L10.4794 2.55611C10.1863 2.26319 9.78899 2.09863 9.37467 2.09863C8.96035 2.09863 8.56299 2.26319 8.26998 2.55611V2.55611Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </NavLink>
             {openSubmenu && (
               <ul className={styles.submenu}>
                 <li>
                   <NavLink
                     onClick={() => onClickClose(false)}
                     className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-                    to="/services/customer">
+                    to="/ltvcac/services/customer">
                     CUSTOMER
                     <br />
                     DEVELOPMENT
@@ -94,7 +109,7 @@ function MobileMenu({ onClickClose }) {
                   <NavLink
                     onClick={() => onClickClose(false)}
                     className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-                    to="/services/analytics">
+                    to="/ltvcac/services/analytics">
                     ANALYTICS
                     <br />
                     SYSTEM SETUP
@@ -104,7 +119,7 @@ function MobileMenu({ onClickClose }) {
                   <NavLink
                     onClick={() => onClickClose(false)}
                     className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-                    to="/services/paid">
+                    to="/ltvcac/services/paid">
                     LEAD
                     <br />
                     GENERATED
@@ -123,7 +138,7 @@ function MobileMenu({ onClickClose }) {
       <div className={styles.social}>
         <ul>
           <li>
-            <a href="https://www.linkedin.com/company/ltvcac-agency/">
+            <a target="_blank" href="https://www.linkedin.com/company/ltvcac-agency/">
               <svg
                 width="60"
                 height="60"
@@ -170,7 +185,7 @@ function MobileMenu({ onClickClose }) {
           </li>
 
           <li>
-            <a href="https://business.facebook.com/ltvcac/">
+            <a target="_blank" href="https://business.facebook.com/ltvcac/">
               <svg
                 width="60"
                 height="60"
@@ -189,7 +204,7 @@ function MobileMenu({ onClickClose }) {
           </li>
 
           <li>
-            <a href="https://www.instagram.com/ltvcac.agency/">
+            <a target="_blank" href="https://www.instagram.com/ltvcac.agency/">
               <svg
                 width="60"
                 height="60"

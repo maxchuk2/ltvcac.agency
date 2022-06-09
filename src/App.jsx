@@ -77,15 +77,15 @@ function App() {
         <Header onClickMenu={(bool) => setOpenedMenu(bool)} />
         <div className="main">
           <Routes>
-            <Route path="/" element={<Home hero={herosInfo[0]} />} />
+            <Route path="/ltvcac/" element={<Home hero={herosInfo[0]} />} />
 
-            <Route path="services" element={<Services hero={herosInfo[5]} />} />
-            <Route path="services/analytics" element={<Analytics hero={herosInfo[1]} />} />
-            <Route path="services/paid" element={<Paid hero={herosInfo[2]} />} />
-            <Route path="services/customer" element={<Customer hero={herosInfo[3]} />} />
+            <Route path="/ltvcac/services" element={<Services hero={herosInfo[5]} />} />
+            <Route path="/ltvcac/services/analytics" element={<Analytics hero={herosInfo[1]} />} />
+            <Route path="/ltvcac/services/paid" element={<Paid hero={herosInfo[2]} />} />
+            <Route path="/ltvcac/services/customer" element={<Customer hero={herosInfo[3]} />} />
 
-            <Route path="portfolio" element={<Portfolio hero={herosInfo[4]} />} />
-            <Route path="/portfolio/:id" element={<Project />} />
+            <Route path="/ltvcac/portfolio" element={<Portfolio hero={herosInfo[4]} />} />
+            <Route path="/ltvcac/portfolio/:id" element={<Project />} />
             <Route path="*" element={<Page404 />} />
           </Routes>
         </div>

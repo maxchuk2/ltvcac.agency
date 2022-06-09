@@ -1,6 +1,4 @@
 import styles from './ProjectFull.module.scss';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
 
 function ProjectFull({ project }) {
   return (

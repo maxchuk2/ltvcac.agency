@@ -13,13 +13,13 @@ function Footer() {
         <nav className={`${styles.footerNav} mb-60 mb-md-0`}>
           <ul>
             <li>
-              <Link to="/">About Us</Link>
+              <Link to="ltvcac/">About Us</Link>
             </li>
             <li>
-              <Link to="portfolio">Portfolio</Link>
+              <Link to="/ltvcac/portfolio">Portfolio</Link>
             </li>
             <li>
-              <Link to="services">Sevices</Link>
+              <Link to="/ltvcac/services">Sevices</Link>
             </li>
           </ul>
         </nav>

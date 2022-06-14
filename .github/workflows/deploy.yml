@@ -9,8 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: mv .git ./public
-        shell: bash
       - run: find . -type 'f' | grep -v ".git" | grep -v "public" | xargs rm
         shell: bash
       - run: find . -type 'd' | grep -v ".git" | grep -v "public" | xargs rm -rf || echo "Good"
@@ -19,9 +17,9 @@ jobs:
         shell: bash
       - run: rm -rf ./public
         shell: bash
-      - run: git config user.name github-actions
+      - run: git config --local user.name github-actions
         shell: bash
-      - run: git config user.email github-actions@github.com
+      - run: git config --local user.email github-actions@github.com
         shell: bash
       - run: git --work-tree build add --all
         shell: bash

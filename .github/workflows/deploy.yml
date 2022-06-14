@@ -15,7 +15,6 @@ jobs:
           find . -type 'd' | grep -v ".git" | grep -v "public" | xargs rm -rf || echo "Good"
           mv public/* .
           rm -rf ./public
-          rm -rf ./github
         shell: bash
       - name: Commit
         run: |

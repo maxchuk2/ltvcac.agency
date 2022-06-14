@@ -15,10 +15,18 @@ jobs:
           mv public/* .
           rm -rf ./public
         shell: bash
-      - run: |
-          git config --local user.name github-actions
-          git config --local user.email github-actions@github.com
-          git --work-tree build add --all
-          git commit -m "Automatic Deploy action run by github-actions"
+      - name: Commit report
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git commit -am "Automatic Deploy action run by github-actions"
           git push origin HEAD:gh-pages --force
-        shell: bash
+
+      #- run: git config --local user.name github-actions
+      #  shell: bash
+      #- run: git config --local user.email github-actions@github.com
+      #  shell: bash
+      #- run : git commit -m "Automatic Deploy action run by github-actions" -a
+      #  shell: bash
+      #- run : git push origin HEAD:gh-pages --force
+      #  shell: bash

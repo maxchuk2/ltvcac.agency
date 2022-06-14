@@ -21,9 +21,7 @@ jobs:
         shell: bash
       - run: git config --local user.email github-actions@github.com
         shell: bash
-      - run: git --work-tree build add --all
-        shell: bash
-      - run : git commit -m "Automatic Deploy action run by github-actions"
+      - run : git commit -m "Automatic Deploy action run by github-actions" -a
         shell: bash
       - run : git push origin HEAD:gh-pages --force
         shell: bash

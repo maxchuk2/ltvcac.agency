@@ -9,25 +9,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: find . -type 'f' | grep -v ".git" | grep -v "public" | xargs rm
+      - run: |
+          find . -type 'f' | grep -v ".git" | grep -v "public" | xargs rm
+          find . -type 'd' | grep -v ".git" | grep -v "public" | xargs rm -rf || echo "Good"
+          mv public/* .
+          rm -rf ./public
         shell: bash
-      - run: find . -type 'd' | grep -v ".git" | grep -v "public" | xargs rm -rf || echo "Good"
-        shell: bash
-      - run: mv public/* .
-        shell: bash
-      - run: rm -rf ./public
-        shell: bash
-      - run: ls -l
-        shell: bash
-      - run: git config --local user.name github-actions
-        shell: bash
-      - run: ls -l
-        shell: bash
-      - run: git config --local user.email github-actions@github.com
-        shell: bash
-      - run: ls -l
-        shell: bash
-      - run : git commit -m "Automatic Deploy action run by github-actions" -a
-        shell: bash
-      - run : git push origin HEAD:gh-pages --force
+      - run: |
+          git config --local user.name github-actions
+          git config --local user.email github-actions@github.com
+          git --work-tree build add --all
+          git --work-tree build commit -m 'deploy files'
+          git push origin HEAD:gh-pages --force
         shell: bash

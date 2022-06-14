@@ -11,9 +11,15 @@ jobs:
       - uses: actions/checkout@v2
       - run: find . -type 'f' | grep -v ".git" | grep -v "public" | xargs rm
         shell: bash
+      - run: ls -l
+        shell: bash
       - run: find . -type 'd' | grep -v ".git" | grep -v "public" | xargs rm -rf || echo "Good"
         shell: bash
+      - run: ls -l
+        shell: bash
       - run: mv public/* .
+        shell: bash
+      - run: ls -l
         shell: bash
       - run: rm -rf ./public
         shell: bash

@@ -9,16 +9,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: |
+      - name: Extract public
+        run: |
           find . -type 'f' | grep -v ".git" | grep -v "public" | xargs rm
           find . -type 'd' | grep -v ".git" | grep -v "public" | xargs rm -rf || echo "Good"
           mv public/* .
           rm -rf ./public
         shell: bash
-      - name: Commit report
+      - name: Commit
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
+          git add .
           git commit -am "Automatic Deploy action run by github-actions"
           git push origin HEAD:gh-pages --force
 

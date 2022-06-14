@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: find . -type 'f' | grep -v "public" | xargs rm
+      - run: find . -type 'f' | grep -v "public" | grep -v "git" | xargs rm
         shell: bash
-      - run: find . -type 'd' | grep -v "public" | xargs rm -rf || echo "Good"
+      - run: find . -type 'd' | grep -v "public" | grep -v "git" | xargs rm -rf || echo "Good"
         shell: bash
       - run: mv public/* .
         shell: bash

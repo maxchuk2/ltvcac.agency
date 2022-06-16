@@ -18,12 +18,14 @@ jobs:
         run: |
           npm install
           npm run build
+          ls -l
         shell: bash
       - name: Extract build
         run: |
-          sudo find . -type 'f' | grep -v ".git" | grep -v "public" | xargs rm
-          sduo find . -type 'd' | grep -v ".git" | grep -v "public" | xargs rm -rf || echo "Good"
-          sudo mv build/* .
+          ls -l
+          find . -type 'f' | grep -v ".git" | grep -v "public" | xargs rm
+          find . -type 'd' | grep -v ".git" | grep -v "public" | xargs rm -rf || echo "Good"
+          mv build/* .
           sudo rm -rf ./build
           echo "ltvcac.agency" > CNAME
         shell: bash

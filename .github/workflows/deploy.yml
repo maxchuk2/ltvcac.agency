@@ -8,13 +8,23 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Install Node 16
+        run: |
+          curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+          sudo apt-get install -y nodejs
+        shell: bash
       - uses: actions/checkout@v2
-      - name: Extract public
+      - name: Build
+        run: |
+          npm install
+          npm run build
+        shell: bash
+      - name: Extract build
         run: |
           find . -type 'f' | grep -v ".git" | grep -v "public" | xargs rm
           find . -type 'd' | grep -v ".git" | grep -v "public" | xargs rm -rf || echo "Good"
-          mv public/* .
-          rm -rf ./public
+          mv build/* .
+          rm -rf ./build
           echo "ltvcac.agency" > CNAME
         shell: bash
       - name: Commit

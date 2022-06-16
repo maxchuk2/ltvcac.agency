@@ -9,7 +9,7 @@ function MobileMenu({ onClickClose }) {
 
   return (
     <div className={styles.mobileMenu}>
-      <NavLink onClick={() => onClickClose(false)} to="/ltvcac" className={styles.logo}>
+      <NavLink onClick={() => onClickClose(false)} to="" className={styles.logo}>
         <img src={logoSvg} alt="logo" />
       </NavLink>
 
@@ -64,7 +64,7 @@ function MobileMenu({ onClickClose }) {
             <NavLink
               onClick={() => onClickClose(false)}
               className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-              to="/ltvcac">
+              to="">
               About Us
             </NavLink>
           </li>
@@ -72,12 +72,12 @@ function MobileMenu({ onClickClose }) {
             <NavLink
               onClick={() => onClickClose(false)}
               className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-              to="/ltvcac/portfolio">
+              to="/portfolio">
               Portfolio
             </NavLink>
           </li>
           <li>
-            <NavLink className={styles.submenuLink} to="/ltvcac/services">
+            <NavLink className={styles.submenuLink} to="/services">
               <span onClick={() => onClickClose(false)}>SERVICES</span>
               <button onClick={() => setOpenSubmenu(!openSubmenu)} className={styles.submenuBtn}>
                 <svg
@@ -99,7 +99,7 @@ function MobileMenu({ onClickClose }) {
                   <NavLink
                     onClick={() => onClickClose(false)}
                     className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-                    to="/ltvcac/services/customer">
+                    to="/services/customer">
                     CUSTOMER
                     <br />
                     DEVELOPMENT
@@ -109,7 +109,7 @@ function MobileMenu({ onClickClose }) {
                   <NavLink
                     onClick={() => onClickClose(false)}
                     className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-                    to="/ltvcac/services/analytics">
+                    to="/services/analytics">
                     ANALYTICS
                     <br />
                     SYSTEM SETUP
@@ -119,7 +119,7 @@ function MobileMenu({ onClickClose }) {
                   <NavLink
                     onClick={() => onClickClose(false)}
                     className={({ isActive }) => (isActive ? 'fw-700 color-primary' : '')}
-                    to="/ltvcac/services/paid">
+                    to="/services/paid">
                     LEAD
                     <br />
                     GENERATED
@@ -138,7 +138,7 @@ function MobileMenu({ onClickClose }) {
       <div className={styles.social}>
         <ul>
           <li>
-            <a target="_blank" href="https://www.linkedin.com/company/ltvcac-agency/">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company-agency/">
               <svg
                 width="60"
                 height="60"
@@ -185,7 +185,7 @@ function MobileMenu({ onClickClose }) {
           </li>
 
           <li>
-            <a target="_blank" href="https://business.facebook.com/ltvcac/">
+            <a target="_blank" rel="noreferrer" href="https://business.facebook.com/">
               <svg
                 width="60"
                 height="60"
@@ -204,7 +204,7 @@ function MobileMenu({ onClickClose }) {
           </li>
 
           <li>
-            <a target="_blank" href="https://www.instagram.com/ltvcac.agency/">
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com.agency/">
               <svg
                 width="60"
                 height="60"
